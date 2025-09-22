@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chelsea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Sue Ellen Francisco", cursive;
+      background: #d4c270;
+      color: #3a2f0b;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 30px;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .item {
+      background: #fff6d9;
+      border: 2px solid #3a2f0b;
+      border-radius: 16px;
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .photo {
+      position: relative; 
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .sticker {
+      position: absolute;
+      width: 120px;
+      pointer-events: none;
+    }
+
+    .dog1 { top: 20px; right: -160px; }  
+    .dog2 { bottom: -90px; right: 20px; }
+    .dog3 { top: 20px; left: 20px; }  
+
+    .text-box {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chelsea Park Dog Run</h1>
+    <a class="back" href="index.html">← Back to Map</a>
+  </header>
+
+  <main class="gallery">
+    <div class="item">
+      <div class="photo">
+        <img src="images/park2/01.jpg" alt="Photo 1">
+        <img src="images/Dog1.PNG" class="sticker dog1" alt="Dog1 sticker">
+      </div>
+      <div class="text-box">
+        Chelsea Park Dog Run is the best place to play ball games with your dog! Huge space to run!
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="photo">
+        <img src="images/park2/02.jpg" alt="Photo 2">
+        <img src="images/Dog2.PNG" class="sticker dog2" alt="Dog2 sticker">
+      </div>
+      <div class="text-box">
+        Outside the dog park there's a basketball court and exercise facilities.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="photo">
+        <img src="images/park2/03.jpg" alt="Photo 3">
+        <img src="images/Dog3.PNG" class="sticker dog3" alt="Dog3 sticker">
+      </div>
+      <div class="text-box">
+        Hakuya is usually alone here.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="photo">
+        <img src="images/park2/04.jpg" alt="Photo 4">
+        <img src="images/Dog1.PNG" class="sticker dog1" alt="Dog1 sticker">
+      </div>
+      <div class="text-box">
+        She can play with her ball however she wants, no other dog will take it away.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="photo">
+        <img src="images/park2/05.jpg" alt="Photo 5">
+        <img src="images/Dog2.PNG" class="sticker dog2" alt="Dog2 sticker">
+      </div>
+      <div class="text-box">
+        Hakuya ready?
+      </div>
+    </div>
+  </main>
+</body>
+</html>

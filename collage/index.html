@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NYC Dog Parks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      font-family: Arial, sans-serif;
+      background: #d4c270;
+      justify-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin: 20px 0;
+      z-index: 15;
+    }
+
+    h1, h2, h3{
+      font-family: "Sue Ellen Francisco", cursive;
+      color: #3a2f0b;
+    
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      
+    }
+
+    h2 {
+      margin: 5px 0;
+      font-weight: normal;
+      font-size: 1.5rem;
+      
+    }
+
+    h3 {
+      margin: 5px 0;
+      font-weight: normal;
+      font-size: 2rem;
+      
+    }
+
+    .layout {
+      display: grid;
+      place-items: center;
+      width: 90vw;
+      height: 75vh;
+    }
+
+
+    .map-container {
+      position: relative;
+      width: 50%;  
+    }
+
+    .map-container img.map {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    .paw {
+     position: absolute;
+     width: 150px;
+     cursor: pointer;
+     transition: transform 0.2s;
+  z-index: 10;
+    }
+
+    .paw:hover {
+      transform: scale(1.2);
+    }
+
+    .paw1 { top: 10%; left: 15%; }
+    .paw2 { top: 50%; left: 10%; }
+    .paw3 { top: 80%; left: 50%; }
+
+    .dog {
+      position: absolute;
+      width: 500px;
+  z-index: 1;  
+    }
+
+    .dog1 { top: -10%; left: 40%; }
+    .dog2 { bottom: -10%; left: -60%; }
+    .dog3 { bottom: -15%; left: 20%; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NYC Dog Parks</h1>
+    <h2>Let's start the trip</h2>
+    <h3>Click each paw to vist the parks and read my doggy diary!</h3>
+  </header>
+
+  <div class="layout">
+    <div class="map-container">
+
+      <img src="images/Map.JPG" alt="NYC Map" class="map">
+
+      <a href="park1.html"><img src="images/paw1.PNG" alt="Park 1" class="paw paw1"></a>
+      <a href="park2.html"><img src="images/paw2.PNG" alt="Park 2" class="paw paw2"></a>
+      <a href="park3.html"><img src="images/paw3.PNG" alt="Park 3" class="paw paw3"></a>
+
+      <img src="images/Dog1.PNG" alt="Dog 1" class="dog dog1">
+      <img src="images/Dog2.PNG" alt="Dog 2" class="dog dog2">
+      <img src="images/Dog3.PNG" alt="Dog 3" class="dog dog3">
+    </div>
+  </div>
+</body>
+</html>

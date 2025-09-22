@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jimmy's Dog Run</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Sue Ellen Francisco", cursive;
+      background: #d4c270;
+      color: #3a2f0b;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 16px 6px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 8px;
+      text-decoration: none;
+      color: #3a2f0b;
+      border-bottom: 1.5px solid currentColor;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .tile {
+      position: relative;       
+      border-radius: 14px;
+      overflow: hidden;         
+      border: 1.5px solid #3a2f0b;
+      background: #fff6d9;
+    }
+    .tile img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .caption {
+      position: absolute;
+      max-width: 70%;
+      background: rgba(255, 246, 217, 0.95); 
+      border: 1.5px solid #3a2f0b;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 1.05rem;
+      line-height: 1.35;
+      box-shadow: 0 2px 0 rgba(58,47,11,0.2);
+    }
+    .tl { top: 12px; left: 12px; }
+    .tr { top: 12px; right: 12px; }
+    .bl { bottom: 12px; left: 12px; }
+    .br { bottom: 12px; right: 12px; }
+    @media (max-width: 720px) {
+      .gallery { grid-template-columns: 1fr; }
+      .caption { max-width: 85%; font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jimmy's Dog Run</h1>
+    <a class="back" href="index.html">← Back to Map</a>
+  </header>
+
+  <main class="gallery">
+
+    <figure class="tile">
+      <img src="images/park3/01.jpg" alt="Photo 1">
+      <figcaption class="caption tr">Beautiful park</figcaption>
+    </figure>
+
+    <figure class="tile">
+      <img src="images/park3/02.jpg" alt="Photo 2">
+      <figcaption class="caption bl">Nice little hill in the center</figcaption>
+    </figure>
+
+    <figure class="tile">
+      <img src="images/park3/03.jpg" alt="Photo 3">
+      <figcaption class="caption tl">The most populated doggy place</figcaption>
+    </figure>
+
+    <figure class="tile">
+      <img src="images/park3/04.jpg" alt="Photo 4">
+      <figcaption class="caption br">hakuya being on her favorite spot</figcaption>
+    </figure>
+
+    <figure class="tile">
+      <img src="images/park3/05.jpg" alt="Photo 5">
+      <figcaption class="caption tr">This spot is not for shareing, nor is her tennis ball</figcaption>
+    </figure>
+
+    <figure class="tile">
+      <img src="images/park3/06.jpg" alt="Photo 6">
+      <figcaption class="caption bl">Waiting </figcaption>
+    </figure>
+
+    <figure class="tile">
+      <img src="images/park3/07.jpg" alt="Photo 7">
+      <figcaption class="caption tl">On the hill again</figcaption>
+    </figure>
+
+    <figure class="tile">
+      <img src="images/park3/08.jpg" alt="Photo 8">
+      <figcaption class="caption br">Sharing with friend this time</figcaption>
+    </figure>
+
+    <figure class="tile">
+      <img src="images/park3/09.jpg" alt="Photo 9">
+      <figcaption class="caption tr">My social time</figcaption>
+    </figure>
+
+    <figure class="tile">
+      <img src="images/park3/10.jpg" alt="Photo 10">
+      <figcaption class="caption bl">My new friend</figcaption>
+    </figure>
+  </main>
+</body>
+</html>
